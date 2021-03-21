@@ -675,7 +675,7 @@ button {
     transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 4px;
-    margin-top:200px;                /*временно*/
+    margin-top:10px;                /*временно*/
 }
 
 .modal-button {
@@ -701,19 +701,63 @@ button {
     pointer-events: none;
 }
 
-/*  форма  */
+/* ==================   форма   ==================  */
 
 .form {
-    padding: 40px;  
+    padding: 20px;  
 }
 
-.form-field {
+/* имя.тел.почта */
+.wrapper-field {
     display: flex;
     flex-direction: column;
     margin-bottom: 28px;
 }
 
-.form-field input {
+.wrapper-field input {
     margin: 0;
     padding: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+/* коментарий */
+.form textarea {
+    height: 120px;
+    padding: 12px;
+    resize: none;
+}
+
+.comment {
+    /* margin-bottom: 20px; */
+}
+
+/* условия */
+.form span {
+    color: var(--accent-color);
+    text-decoration:underline;
+}
+
+.wrapper-conditions {
+    /* margin-bottom: 30px; */
+}
+
+.wrapper-conditions label {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--title-text-color);
+}
+
+/* кнопка */
+.form button{
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    padding: 10px 55px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }

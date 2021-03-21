@@ -407,18 +407,27 @@
             </button>
             <form class="form">
                 <b>Оставьте свои данные, мы вам перезвоним</b>
-                <div class="form-field">
+                <div class="wrapper-field">
                     <lable for="name">Имя</lable>
-                    <input type="text" name="name" id="name" placeholder="Имя">
+                    <input type="text" name="name" id="name">
                 </div>
-                <div class="form-field">
+                <div class="wrapper-field">
                     <lable for="tel">Телефон</lable>
-                    <input type="tel" name="tel" id="tel" placeholder="Телефон">
+                    <input type="tel" name="tel" id="tel">
                 </div>
-                <div class="form-field">
+                <div class="wrapper-field">
                     <lable for="mail">Почта</lable>
-                    <input type="email" name="mail" id="mail" placeholder="Почта">
+                    <input type="email" name="mail" id="mail">
                 </div>
+                <div class="wrapper-field comment">
+                    <label for="comment">Коментарий</label>
+                    <textarea name="comment" id="comment" row="5" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="wrapper-conditions">
+                    <input type="checkbox" name="policy" id="policy">
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#"><span>Условия договора</span></a></label>
+                </div>
+                <button type="button" class="button-form">Отправить</button>
             </form>
         </div>
     </div>
