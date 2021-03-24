@@ -744,7 +744,16 @@ button {
 /* ==================   форма   ==================  */
 
 .form {
-    padding: 20px;  
+    padding: 40px;  
+}
+
+.form b {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: var(--primary-text-color);
 }
 
 /* имя.тел.почта */
@@ -755,12 +764,19 @@ button {
     margin-bottom: 28px;
 }
 
-.wrapper-field input {
-    
+.form-input {
     height: 40px;
     padding: 12px;
+    padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.form-lable {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--title-text-color);
 }
 
 .form-svg {
@@ -781,6 +797,12 @@ button {
 }
 
 /* условия */
+.lable-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--title-text-color);
+}
+
 .form span {
     color: var(--accent-color);
     text-decoration:underline;
