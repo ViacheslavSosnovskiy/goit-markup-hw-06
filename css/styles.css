@@ -552,6 +552,7 @@ button {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: var(--primary-white-color);
+    padding: 15px 16px;
 }
 
 .subscribe-input::placeholder {
@@ -560,6 +561,7 @@ button {
 
 /* button */
 .footer-subscribe button {
+    position: relative;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -572,10 +574,14 @@ button {
     color: var(--primary-white-color);
 }
 
-
+/* .subscribe-svg {
+    position: absolute;
+    right: 10px;
+    bottom: 25%;
+    margin-right:10px;  
+} */
 
 /* страничка портфолио*/
-
 
 /* ============== ХОВЕР НА ССЫЛКАХ ============ */
 
@@ -771,7 +777,6 @@ button {
 }
 
 /* имя.тел.почта */
-
 .form-svg {
     position:absolute;
     top: 50%;
