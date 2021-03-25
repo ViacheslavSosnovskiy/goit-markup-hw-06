@@ -528,6 +528,11 @@ button {
 
 /*div - subscribe*/
 
+.footer-subscribe form {
+    display: flex;
+    margin-top: 20px;
+}
+
 .footer-subscribe b {
     font-weight: 700;
     font-size: 14px;
@@ -537,6 +542,7 @@ button {
     color: var(--primary-white-color);
 }
 
+/* input */
 .footer-subscribe input {
     margin-right: 12px;
     width: 358px;
@@ -545,13 +551,14 @@ button {
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    color: var(--primary-white-color);
 }
 
-.footer-subscribe form {
-    display: flex;
-    margin-top: 20px;
+.subscribe-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
+/* button */
 .footer-subscribe button {
     font-weight: 700;
     font-size: 16px;
@@ -564,6 +571,8 @@ button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
+
+
 
 /* страничка портфолио*/
 
@@ -715,9 +724,7 @@ button {
     transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 4px;
-    margin-top: 10px;                /*временно*/
-
-    padding: 40px;    /*из урока */  
+    padding: 40px; 
 
 }
 
@@ -733,6 +740,11 @@ button {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-svg:hover,
+.button-svg:focus {
+    fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -755,7 +767,7 @@ button {
     text-align: center;
 
     color: var(--primary-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 /* имя.тел.почта */
@@ -765,7 +777,6 @@ button {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    /* display: block; */
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -788,13 +799,13 @@ button {
     border-color: var(--accent-color);
 }
 
-.form-input:focus + .form-svg {
-    fill: var(--accent-color);
+.wrapper-field {
+    display: block;
+    margin-top: 4px;
 }
 
-.wrapper-field {
-
-    margin-top: 4px;
+.form-input:focus + .form-svg {
+    fill: var(--accent-color);
 }
 
 .form-lable {
@@ -802,10 +813,11 @@ button {
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--title-text-color);
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 /* коментарий */
+
 .form-message {
     width: 100%;
     height: 120px;
@@ -814,6 +826,11 @@ button {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 4px;
+}
+
+.massage{
+    margin-bottom: 20px;
 }
 
 .form-message::placeholder {
@@ -826,6 +843,7 @@ button {
 }
 
 /* условия */
+
 .lable-checkbox {
     font-size: 14px;
     line-height: 1.71;
@@ -841,25 +859,29 @@ button {
     font-size: 14px;
     line-height: 1.71;
     color: var(--title-text-color);
+    margin-bottom: 40px;
 
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center
 }
 
 .lable-checkbox:before {
     content: '';
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    outline: 1px solid #000;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    background-repeat: no-repeat;
     cursor: pointer;
-    /* margin-right: 8px; */
+    margin-right: 8px;
 }
 
 .input-checkbox:checked + .lable-checkbox::before {
     background-image: url("../images/svg/icon-check.svg");
-    /* background-position: center; */
+    background-size: contain;
+    border-color:var(--accent-color);
+    background-origin: border-box;
+    background-color: var(--accent-color);
 }
 
 .input-checkbox:focus + .lable-checkbox::before {
@@ -867,6 +889,7 @@ button {
 }
 
 /* кнопка */
+
 .form button{
     margin: auto;
     font-weight: 700;
@@ -878,5 +901,5 @@ button {
     border-radius: 4px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

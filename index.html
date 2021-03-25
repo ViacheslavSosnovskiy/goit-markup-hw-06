@@ -398,7 +398,7 @@
                 <div class="footer-subscribe">
                     <b class="subscribe">Подпишитесь на рассылку</b>
                     <form>
-                        <input type="email">
+                        <input class="subscribe-input" type="email" placeholder="E-mail">
                         <button>Подписаться</button>
                     </form>
                 </div>
@@ -415,7 +415,7 @@
             <form class="form" action="#">
                 <b>Оставьте свои данные, мы вам перезвоним</b>
                 <lable class="form-lable">
-                    Имя 
+                    Имя        
                     <span class="wrapper-field">
                         <input class="form-input" type="name">
                         <svg class="form-svg" width="18" height="18">
@@ -436,19 +436,19 @@
                 <lable class="form-lable">
                     Почта
                     <span class="wrapper-field">
-                        <input class="form-input" type="email">
+                        <input class="form-input" type="email" required>
                         <svg class="form-svg" width="18" height="18">
                             <use href="./images/icons.svg#form-3"></use>
                         </svg>
                     </span>
                 </lable>
-                <label class="form-lable">
+                <label class="form-lable massage">
                     Комментарий
                     <textarea class="form-message" name="comment" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" id="user-term" name="user-term" class="input-checkbox visually-hidden">
+                <input type="checkbox" id="user-term" name="user-term" class="input-checkbox visually-hidden" required>
                 <label for="user-term" class="lable-checkbox">
-                    Соглашаюсь с рассылкой и принимаю
+                    Соглашаюсь с рассылкой и принимаю&nbsp;
                     <a href="#">Условия договора</a>
                 </label>
                 <button type="submit" class="button-form">Отправить</button>
