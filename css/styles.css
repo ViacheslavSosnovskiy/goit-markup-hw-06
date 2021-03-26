@@ -130,7 +130,7 @@ button {
     align-items: center;
     margin-left: auto;
 }
-
+        
 .contacts-list .item:not(:last-child){
     margin-right: 50px;
 }
@@ -144,7 +144,8 @@ button {
 .contacts-list .icons-link {
     display:inline-flex;
     margin-right: 10px;
-    color: #757575;
+    fill: #757575;
+    
 }
 
 .contacts-list .info:hover .icons-link,
@@ -153,13 +154,11 @@ button {
 }
 
 /* ==============  эффект текущей страницы ============ */
-
 .navigation-list .current {
     color: var(--accent-color);
 }
 
 /*  нижнее подчеркивание */
-
 .current::after{
     content: '';
     position: absolute;
@@ -172,11 +171,10 @@ button {
     border-radius: 2px;
     background-color:var(--accent-color);
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--animation);
 }
 
 /* ============== ХЕДЕР  ============== */
-
 .header{
     border-bottom: 1px solid #ECECEC;
 }
@@ -190,7 +188,6 @@ button {
     display: flex;
     align-items: center;
 }
-
 /* ============= ГЕРОЙ =============== */
 
 .section-hero {
