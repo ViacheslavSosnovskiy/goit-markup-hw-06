@@ -3,7 +3,9 @@
     --primary-white-color: #ffffff;
     --title-text-color: #757575;
     --accent-color:  #2196F3;
-    
+    --hover-background-color: #188ce8;
+
+
     --main-font: Roboto, sans-serif;
 
     --card-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -46,6 +48,11 @@ button {
     cursor: pointer;
     display: block;
     border: none;
+}
+
+   /* убирает обводки */
+:active, :hover, :focus {
+    outline: none;
 }
 
 .container {
@@ -114,13 +121,13 @@ button {
 
 .navigation-list {
     display: flex;
-    text-align: center;
+    align-items: center;
     margin-left: 93px;
 }
 
 .contacts-list {
     display: flex;
-    text-align: center;
+    align-items: center;
     margin-left: auto;
 }
 
@@ -135,7 +142,7 @@ button {
 /*  svg / contact */
 
 .contacts-list .icons-link {
-    display: inline-flex;
+    display:inline-flex;
     margin-right: 10px;
     color: #757575;
 }
@@ -214,7 +221,7 @@ button {
 
 /* ==============  КНОПКИ   ============== */
 
-.section-hero button {
+.button-hero {
     text-align: center;
     margin: 0 auto;
 
@@ -228,7 +235,15 @@ button {
     border-radius: 4px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+
 }
+
+.button-hero:hover,
+.button-hero:focus {
+    transition: background-color var(--animation);
+    background-color: var(--hover-background-color);
+}
+
 
 /* ============= ПРЕИМУЩЕСТВА =============== */
 
@@ -584,8 +599,14 @@ button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     outline: none;
-
 }
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    transition: background-color var(--animation);
+    background-color: var(--hover-background-color);
+}
+
 
 .subscribe-svg {
     margin-left: 10px;
@@ -742,6 +763,7 @@ button {
     background-color: #fff;
     border-radius: 4px;
     padding: 40px; 
+    margin-top: 10px; /*временно*/
 
 }
 
@@ -918,4 +940,10 @@ button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-form:hover,
+.button-form:focus {
+    transition: background-color var(--animation);
+    background-color: var(--hover-background-color);
 }
