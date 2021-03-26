@@ -561,7 +561,8 @@ button {
 
 /* button */
 .footer-subscribe button {
-    position: relative;
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -574,12 +575,10 @@ button {
     color: var(--primary-white-color);
 }
 
-/* .subscribe-svg {
-    position: absolute;
-    right: 10px;
-    bottom: 25%;
-    margin-right:10px;  
-} */
+.subscribe-svg {
+    margin-left: 10px;
+}
+
 
 /* страничка портфолио*/
 
@@ -889,12 +888,12 @@ button {
     background-color: var(--accent-color);
 }
 
+/*эффект фокуса*/
 .input-checkbox:focus + .lable-checkbox::before {
     box-shadow: 0 0 0 2px var(--accent-color);
 }
 
 /* кнопка */
-
 .form button{
     margin: auto;
     font-weight: 700;
