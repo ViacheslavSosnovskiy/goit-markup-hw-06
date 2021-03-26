@@ -337,6 +337,7 @@ button {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    
 }
 
 .icon-list {
@@ -354,12 +355,18 @@ button {
     height: 44px;
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--animation);
+}
+
+.social-link:hover,
+.social-link:focus {
+    transition: background-color var(--animation);
+    background-color: var(--accent-color);
 }
 
 .social-link:hover .svg-icons,
 .social-link:focus .svg-icons {
-    fill: var(--primary-white-color);    
+    fill: var(--primary-white-color);
 }
 
 .item-icon:hover .social-link,
@@ -380,7 +387,7 @@ button {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
+    text-align : center;
 }
 
 .team-list {
@@ -581,7 +588,6 @@ button {
 .subscribe-input:hover,
 .subscribe-input:focus {
     border-color:var(--accent-color);
-    outline: none;
 }
 
 /* button */
@@ -649,7 +655,7 @@ button {
     padding: 6px 22px;
     border-radius: 4px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--animation);
 }
     
 .buttons-list .item:not(:last-child){
@@ -729,7 +735,7 @@ button {
     /* overflow: scroll; */
 
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--animation);
 }
 
 .link-wrapper:hover .overlay,
@@ -778,12 +784,12 @@ button {
 
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-svg:hover,
 .button-svg:focus {
     fill: var(--accent-color);
+    transition: border var(--animation);
 }
 
 .is-hidden {
@@ -815,7 +821,7 @@ button {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--animation);
 }
 
 .wrapper-field {
@@ -829,7 +835,7 @@ button {
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--animation);
 }
 
 .form-input:focus {
@@ -863,7 +869,7 @@ button {
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--animation);
     margin-top: 4px;
 }
 
@@ -939,11 +945,10 @@ button {
     border-radius: 4px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-form:hover,
 .button-form:focus {
-    transition: background-color var(--animation);
+    transition: color var(--animation), background-color var(--animation);
     background-color: var(--hover-background-color);
 }
